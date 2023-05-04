@@ -1,0 +1,28 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Usando a tag &lt;picture&gt; é possível adicionar imagens ao site.</p>
+    <!--O google possui uma taxa chamada de bounce rate, que indica a rejeição do site. Os usuários se incomodam com imagens com tamanhos mal encaixados, como um site com rolagem lateral, por exemplo, e ao saírem do site fazem com que o bounce rate do site aumente e ele seja considerado um site ruim pelo navegador. Então coloque as imagens no tamanho correto!-->
+    <p>Com o auxílio da tag &lt;source&gt; é possível selecionar o tamanho máximo/mínimo em pixels em que ocorrerá a transição de imagens para que ela se ajuste ao tamanho da tela sem aparecer a barra de rolagem lateral.</p>
+    <!--Recomendado usar uma folga de 50 pixels referente ao tamanho da barra de rolagem-->
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Para reproduzir um áudio basta usar a tag &lt;audio&gt; com o parâmetro "autoplay", além do parâmetro "controls" para que o usuário possa pausar o áudio.</p>
+    <p>Para que o áudio fique melhor configurado, pode-se utilizar a tag &lt;source&gt;.</p>
+    <audio preload="metadata" controls loop> <!--No parâmetro "preload" é possível definir o que será carregado para que o site seja considerado totalmente aberto, sendo "auto" o carregamento do audio completo, "metadata" as suas especificações e "none" nada.-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!--Outros tipos de áudio são: .ogg e .wav(muito pesado)-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.
+            <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo.</a>
+        </p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação em iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            display: block;
+            margin: auto;
+            height: 400px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha um site</h1>
+    <ul>
+        <li><a href="paginas-extras/pag1.html" target="quadro">Primeira página</a></li>
+        <li><a href="paginas-extras/pag2.html" target="quadro">Segunda página</a></li>
+    </ul>
+    <iframe srcdoc="<h1>Escolha uma opção acima</h1>" frameborder="1" name="quadro"></iframe> <!--O parâmetro "srcdoc" aceita html, mas é melhor criar uma página em um arquivo separado para ser exibida como padrão no iframe-->
+</body>
+</html>
+<!--O bot do google e os softwares leitores de tela usados por deficientes visuais têm dificuldades em ler conteúdos dentro de iframes, por isso não é recomendado colocar conteúdos muito sensíveis dentro de iframes. Além disso, é preciso tomar cuidado com os sites que serão "hospedados" no iframe-->

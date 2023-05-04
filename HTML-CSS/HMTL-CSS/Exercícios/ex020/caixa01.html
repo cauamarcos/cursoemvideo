@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models</title>
+    <style>
+        h1 {
+            background-color: aqua;
+            height: 250px;
+            width: 250px; /*Box sizing*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue; /*Shorthand border: width, style, color*/
+            padding: 10px; /*Shorthand padding: top, right, bottom, left*/
+            margin: auto; /*Shorthand margin: top, right, bottom, left*/
+            outline-width: 5px; /*Shorthand outline: width, style, color*/
+            outline-style: double;
+            outline-color: black;
+        }
+        a {
+            border-width: 5px;
+            border-style: dashed;
+            border-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!--As caixas podem ser aninhadas, formando uma hierarquia. Elas possuem altura, largura, padding(acolchoamento), margin e border. Há dois tipos de caixas: as caixas box-level, que ocupam 100% da largura da tela, e ao se iniciarem há uma quebra de linha, assim como quando terminam; e as inline-level, que ocupam apenas o espaço necessário e não sãp cercadas por quebras de linhas.-->
+    <!--Tags do tipo box-level: div, hn(h1, h2, ...), p, main, header, na, article, aside, footer, form e video-->
+    <!--Tags do tipo inline-level: span, a, code, small, strong, em, sup, sub, label, button, input e select-->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos são exemplo de box-level, mas os <a href="#">links</a> são inline-level.</p> <!--Clicando com o botão direito do mouse no site e inspecionando-o é possível ver as configurações das caixas contidas nele. O user agent é o navegador, que atribui configurações padrões aos elementos.
+    "Display: block" marca uma caixa como box-level; "display: inline" marca uma caixa como inline-level; "display: inline-block" atribui características de caixas box-level a uma caixa que permanece inline-level-->
+</body>
+</html>

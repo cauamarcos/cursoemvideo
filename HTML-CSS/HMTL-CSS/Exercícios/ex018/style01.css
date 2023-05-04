@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*id em HTML equivale a # em CSS
+class em HTML equivale a . em CSS*/
+
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: white;
+    width: 800px;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+h1#principal{
+    text-align: center;
+    color: blue;
+}
+
+h1{
+    color: rgb(2, 87, 185);
+}
+
+h2{
+    color: rgb(0, 140, 255);
+}
+
+.basico{
+    color: blueviolet;
+}
+
+.avancado{
+    color: cyan;
+}
+
+
+

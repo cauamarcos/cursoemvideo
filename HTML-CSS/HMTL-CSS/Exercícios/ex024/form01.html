@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get"> <!--Para desligar as sugestões de preenchimento basta usar o parâmetro 'autocomplete="off"'-->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p><!--As etiquetas (labels) são úteis para a identificação dos campos de preenchimento de dados; enquanto o name é mais útil para html e php, o id é melhor para javascript e para o label, que sempre deve ser usado ao criar um formulário-->
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p> <!--A ligação entre os campos de preenchimento de dados e o texto de comando é importante para os mecanismos de busco do google na hora de "analisarem" o site-->
+        <p><input type="submit" value="Enviar"></p>
+        <!--Os métodos de envios de formulários são o get e o post. O get é o método padrão, deixa os dados explícitos na url, é usado para envios de dados não sensíveis e tem um limite de 3000 bytes (3000 caracteres). O post é usado para envios de dados sensíveis (senhas, números de cartão de crédito, etc), dados maiores que 3000 bytes e arquivos (fotos, por exemplo)-->
+    </form>
+</body>
+</html>

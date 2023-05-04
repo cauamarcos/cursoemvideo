@@ -1,0 +1,24 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+    <hr>
+    <h2>Usando links externos</h2>
+    <p>Usa-se a tag &lt;a&gt; para inserir um link externo em um texto</p>
+    <p>Exemplo:</p>
+    <p>Confira <a href="https://www.f1mania.net/f1/gp-da-austria-confira-os-dias-e-horarios-da-f1-no-red-bull-ring/" target="_blank" rel="external">os horários da Formula 1 na Áustria.</a></p> <!--Use os parâmetros target e rel para que o link seja aberto em uma nova aba mantendo seu site aberto-->
+    <h2>Usando links internos</h2>
+    <p>Usando a mesma tag é possível indicar uma página que se encontra na mesma pasta: <a href="pag2.html" rel="next">Acesse a minha segunda página</a>.</p>
+    <p>Para acessar uma página que se encontra em uma pasta interna, <a href="pag3/pag3.html" rel="next" target="_self">clique aqui</a>.</p>
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="livro de cálculo/Cálculo - James Stewart 7ª ed..pdf" download="Cálculo - James Stewart 7ª ed..pdf" type="application/pdf">Baixar livro de cálculo</a></li>
+        <li><a href="livro de cálculo/Cálculo - James Stewart 7ª ed..zip" download="Cálculo - James Stewart 7ª ed..zip" type="application/zip">Livro compactado em ZIP</a></li>
+        <!--O site "iana.org/assignments/media-types" possui uma lista com todos os tipos de mídias que podem ser colocadas no parâmetro type-->
+    </ul>
+</body>
+</html>

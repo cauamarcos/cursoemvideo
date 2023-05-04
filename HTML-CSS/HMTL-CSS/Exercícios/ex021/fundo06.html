@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            height: 400px;
+            padding: 10px;
+            background-color: blue;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        #conteudo {
+            background-color: white;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            height: 200px;
+            width: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%; /*Usando a posição absoluta, é possível modificar a distância "left" e "top"*/
+            transform: translate(-50%, -50%); /*o "transform" transforma a caixa, o "translate" posiciona a caixa*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            
+        </article>
+    </section>
+</body>
+</html>

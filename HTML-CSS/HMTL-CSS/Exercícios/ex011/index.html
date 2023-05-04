@@ -1,0 +1,22 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo em HTML5</title>
+</head>
+<body>
+    <!--Os vídeos podem ser carregados em arquivos .mp4, .mkv, webm (baixa qualidade) e .ogv.
+    O programa Handbrake, assim como conversores online, é útil para editar o formato e a qualidade dos vídeos. A hospedagem do site fica mais cara se o site exibir vídeos com qualidade maior (mais pesados)-->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Para adicionar um vídeo basta usar a tag &lt;video&gt;, que também pode conter a tag &lt;source&gt; para configurar melhor a exibição do arquivo.</p>
+    <p>O vídeo a seguir está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="imagens/limoes-capa.png" controls loop> <!--O parâmetro "poster" serve para definir a thumb-->
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <p>Seu navegador não é compatível com a reprodução do arquivo.</p>
+    </video>
+    <h1>Inserindo vídeos hospedados externamente</h1>
+    <p>Para adicionar um vídeo do YouTube, clique em "compartilhar" no vídeo e clique em "incorporar" para obter o código em HTML.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3p8EBPVZ2Iw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--O vimeo é uma plataforma paga para hospedar vídeos privados com alta qualidade-->
+</body>
+</html>

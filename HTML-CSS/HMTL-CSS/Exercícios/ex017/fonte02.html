@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <!--É possível importar fonte de sites como o dafont.com, onde a fonte desejada é baixada em um arquivo zipado, e após extrair tudo, copie as fontes para a pasta do código e crie um @font-face personalizado. Os tipos de format de fontes são: opentype(otf), truetype(ttf), embedded-opentype, truetype-aat(Apple Advanced Typography) e svg. O format pode ser definido após a url no @font-face-->
+
+    <!--Usando a extensão do google chamada Fonts Ninja é possível identificar e ver as características das fontes usadas no site em que se está navegando-->
+
+    <!--Com os sites whatfontis.com, fontsquirrel.com e o myfonts.com é possível identificar uma fonte contida em uma imagem-->
+    <style>
+        @font-face {
+            font-family: 'Gelo';
+            src: url('fonts/Penguin-Regular.ttf');
+        }
+        h1 {font-family: 'Gelo', 'Times';
+        font-size: 3em;
+        font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nostrum quisquam reiciendis, tempore delectus a ipsum consequatur beatae voluptatum dolorum dolores, at placeat enim magni assumenda dignissimos quas. Adipisci, modi!</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando o tamanho da imagem de fundo</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover; /*o contain exibe sempre a imagem inteira; o cover adequa o tamanho da imagem ao tamanho da tela */
+            background-attachment: fixed; /*scroll é o padrão; o fixed deixa a imagem de fundo fixada*/
+            
+            /*Shorthand background: color -> image -> repeat -> size(não funciona) -> attachment*/
+            /*background: black url('imagens/wallpaper002.jpg') no-repeat fixed;
+            background-size: cover;*/
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            text-indent: 10px;
+        }
+        main {
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid error quasi in quas rem quibusdam quis saepe omnis, labore odit libero laborum, id fuga aperiam incidunt esse nobis, necessitatibus facere dolores commodi dolorum consequuntur. Numquam deserunt et delectus eum explicabo. Vero consequatur, voluptatum nesciunt quis ullam ducimus recusandae eaque dolorum a est esse amet, dolore molestias debitis magnam natus voluptates sunt eveniet distinctio quibusdam possimus, enim inventore modi? Ad ducimus natus autem est quod voluptatum veritatis, quidem pariatur dolore laborum magni nihil inventore? Exercitationem totam, tempora sapiente voluptas harum officiis eius porro neque voluptatibus veniam. Eum ea corrupti modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid error quasi in quas rem quibusdam quis saepe omnis, labore odit libero laborum, id fuga aperiam incidunt esse nobis, necessitatibus facere dolores commodi dolorum consequuntur. Numquam deserunt et delectus eum explicabo. Vero consequatur, voluptatum nesciunt quis ullam ducimus recusandae eaque dolorum a est esse amet, dolore molestias debitis magnam natus voluptates sunt eveniet distinctio quibusdam possimus, enim inventore modi? Ad ducimus natus autem est quod voluptatum veritatis, quidem pariatur dolore laborum magni nihil inventore? Exercitationem totam, tempora sapiente voluptas harum officiis eius porro neque voluptatibus veniam. Eum ea corrupti modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid error quasi in quas rem quibusdam quis saepe omnis, labore odit libero laborum, id fuga aperiam incidunt esse nobis, necessitatibus facere dolores commodi dolorum consequuntur. Numquam deserunt et delectus eum explicabo. Vero consequatur, voluptatum nesciunt quis ullam ducimus recusandae eaque dolorum a est esse amet, dolore molestias debitis magnam natus voluptates sunt eveniet distinctio quibusdam possimus, enim inventore modi? Ad ducimus natus autem est quod voluptatum veritatis, quidem pariatur dolore laborum magni nihil inventore? Exercitationem totam, tempora sapiente voluptas harum officiis eius porro neque voluptatibus veniam. Eum ea corrupti modi.</p>
+    </main>
+</body>
+</html>

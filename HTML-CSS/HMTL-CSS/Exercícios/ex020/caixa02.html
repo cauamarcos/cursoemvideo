@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: blue;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px; /*Pode ser definida com o shorthand, com dois parâmetros(que definem as bordas que formam as diagonais separadamente), ou com quatro parâmetros(um vértice de cada vez)*/
+            
+            /*É possível criar uma borda personalizada e importá-la usando "border-image" (sua shorthand é: source, slice e repeat), ajustando suas configurações; o "border" deve permanecer para "assegurar" o espaço da borda*/
+        }
+        article {
+            text-align: justify;
+        }
+        aside {
+            text-align: right;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445); /*Box-shadow: deslocamento horizontal, vertical, espalhamento e cor; cpmo toda sombra é preta, o ideal é aumentar a transparência da sombra para ela ficar mais suave*/
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head> <!--As grouping tags permitem que o site seja montado de forma semântica. Exemplos são usados abaixo-->
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav><!--Navegação-->
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main><!--Corpo principal-->
+        <section>
+            <article>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni sed reiciendis dolore recusandae iure rerum blanditiis omnis ut ullam, similique quam esse quo, voluptas earum maxime iste corrupti, nemo cupiditate modi quia amet fuga ipsa. Molestiae delectus quod, vitae labore totam doloremque dolor est in nulla, amet quam voluptas quasi dicta aperiam vel officia? Laborum ea tenetur eius maiores repellendus voluptas dolore, optio accusantium fuga voluptatem itaque nulla doloribus. Hic rem quaerat dolore a architecto odio, quo quae accusamus iusto voluptate praesentium cupiditate incidunt nemo soluta facilis dolores sint! Officia, repellat similique vel ex quidem temporibus hic harum reiciendis sint.</p>
+                <aside>
+                    Autor: filósofo Pitón
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer><!--Rodapé-->
+        <p>Desenvolvido por Cauã Marcos</p>
+    </footer>
+    <!--O site mockflow.com é muito útil para planejar o layout do site-->
+</body>
+</html>
